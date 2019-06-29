@@ -1,41 +1,35 @@
-import React, { Fragment } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { ScrollingProvider } from 'react-scroll-section';
-import 'react-tippy/dist/tippy.css';
-import config from 'react-reveal/globals';
-import colors from '../../colors';
-import Helmet from './Helmet';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-const GlobalStyle = createGlobalStyle`
-*,
-*::after,
-*::before { 
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  }
-
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
-  margin: 0;
-  font-family: Cabin;
-  overflow-x: hidden;
-}
-`;
-
-config({ ssrFadeout: true });
-
+import '../assets/sass/main.scss';
 const Layout = ({ children }) => (
-  <Fragment>
-    <GlobalStyle />
-    <ThemeProvider theme={{ colors }}>
-      <ScrollingProvider>
-        <Helmet />
-        {children}
-      </ScrollingProvider>
-    </ThemeProvider>
-  </Fragment>
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Hyperspace' },
+            { name: 'keywords', content: 'site, web' },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <div>{children}</div>
+      </>
+    )}
+  />
 );
 
 Layout.propTypes = {
