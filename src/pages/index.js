@@ -96,13 +96,13 @@ const IndexPage = () => (
                 inserting their business into the cloud have 
                 used Cloud Stuff to help them with this most
                 daunting task. Don't worry! We'll get you as 
-                far up into our cloud with our patented 
-                "CloudInsert"™ technology!
+                far up into our cloud as we can with our patented 
+                CloudInsert™ technology!
               </p>
               <ul className="actions">
                 <li>
                   <Link className="button" to="/generic">
-                    Use "CloudInsert"™ Today!
+                    Use CloudInsert™ Today!
                   </Link>
                 </li>
               </ul>
