@@ -67,19 +67,43 @@ const IndexPage = () => (
           </a>
           <div className="content">
             <div className="inner">
-              <h2>Cloud VoIP - New Voice Over Cloud Protocol</h2>
+              <h2>Cloud VoIP - New Voice Over Cloud Protocol - CloudSpeak™</h2>
               <p>
-                With Cloud Stuff's new Voice Over Cloud Protocol
+                With Cloud Stuff's new Voice Over Cloud Protocol, dubbed CloudSpeak™, 
                 you can be sure that every call your business 
                 needs to make will be safely transported over
                 our cloud network to make your employees more
                 productive every day. Just ask your sales representative
-                for CloudWipe today!
+                for CloudSpeak™ today!
               </p>
               <ul className="actions">
                 <li>
                   <Link className="button" to="/generic">
-                    Order CloudWipe!
+                    Order CloudSpeak™!
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a href="/#" className="image">
+            <img src={pic2} alt="" data-position="top center" />
+          </a>
+          <div className="content">
+            <div className="inner">
+              <h2>Secure data deletion - CloudWipe™</h2>
+              <p>
+                Worried that internet hackers will find your data in the recycle 
+                bin of the internet and steal all of your unwanted vacation photos? 
+                Worry no longer and take advantage of Cloud Stuff's patented secure deletion 
+                technology, CloudWipe™! CloudWipe™ will completely wipe away all previously 
+                eliminated data securely so no one will ever get their hands on it.
+              </p>
+              <ul className="actions">
+                <li>
+                  <Link className="button" to="/generic">
+                    Use CloudWipe™ Today!
                   </Link>
                 </li>
               </ul>
