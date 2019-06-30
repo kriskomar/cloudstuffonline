@@ -10,14 +10,14 @@ const allButt = () => {
         var text = node.data.trim();
         if (text.length > 0) { // Does it have non white-space text content?
             // process text
-            node.data = node.data.replace('The Cloud','My Butt');
-            node.data = node.data.replace('The cloud','My butt');
-            node.data = node.data.replace('the Cloud','my Butt');
-            node.data = node.data.replace('the cloud','my butt');
-            node.data = node.data.replace('THE CLOUD','MY BUTT');
-            node.data = node.data.replace('Cloud','Butt');
-            node.data = node.data.replace('cloud','butt');
-            node.data = node.data.replace('CLOUD','BUTT');
+            node.data = node.data.replace(/The Cloud/g,'My Butt');
+            node.data = node.data.replace(/The cloud/g,'My butt');
+            node.data = node.data.replace(/the Cloud/g,'my Butt');
+            node.data = node.data.replace(/the cloud/g,'my butt');
+            node.data = node.data.replace(/THE CLOUD/g,'MY BUTT');
+            node.data = node.data.replace(/Cloud/g,'Butt');
+            node.data = node.data.replace(/cloud/g,'butt');
+            node.data = node.data.replace(/CLOUD/g,'BUTT');
         }
     }
   });
@@ -29,14 +29,14 @@ const noButt = () => {
         var text = node.data.trim();
         if (text.length > 0) { // Does it have non white-space text content?
             // process text
-            node.data = node.data.replace('My Butt','The Cloud');
-            node.data = node.data.replace('My butt','The cloud');
-            node.data = node.data.replace('my Butt','the Cloud');
-            node.data = node.data.replace('my butt','the cloud');
-            node.data = node.data.replace('MY BUTT','THE CLOUD');
-            node.data = node.data.replace('Butt','Cloud');
-            node.data = node.data.replace('butt','cloud');
-            node.data = node.data.replace('BUTT','CLOUD');
+            node.data = node.data.replace(/My Butt/g,'The Cloud');
+            node.data = node.data.replace(/My butt/g,'The cloud');
+            node.data = node.data.replace(/my Butt/g,'the Cloud');
+            node.data = node.data.replace(/my butt/g,'the cloud');
+            node.data = node.data.replace(/MY BUTT/g,'THE CLOUD');
+            node.data = node.data.replace(/Butt/g,'Cloud');
+            node.data = node.data.replace(/butt/g,'cloud');
+            node.data = node.data.replace(/BUTT/g,'CLOUD');
         }
     }
   });

@@ -173,7 +173,7 @@ const IndexPage = () => (
         <div className="inner">
           <h2>Get in touch with the cloud experts</h2>
           <p>
-            Email us today at <a href="mailto:cloudstuffisgreat@cloudstuff.online">cloudstuffisgreat@cloudstuff.online</a> 
+            Email us today at <a href="mailto:cloudstuffisgreat@cloudstuff.online">cloudstuffisgreat@cloudstuff.online</a>{' '}
             and we will get you in touch with the first available cloud specialist sales representative. You will not be 
             disappointed with how fast they respond to cloud inquiries. 
           </p>
