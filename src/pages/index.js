@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import pic1 from '../images/pic01.jpg';
 import pic2 from '../images/pic02.jpg';
@@ -11,6 +12,7 @@ import Scroll from '../components/Scroll';
 
 const IndexPage = () => (
   <Layout>
+    <Header />
     <Sidebar />
 
     <div id="wrapper">
