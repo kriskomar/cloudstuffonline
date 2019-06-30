@@ -197,7 +197,7 @@ const IndexPage = () => (
                 <ul className="actions">
                   <li>
                     <a href="/#" className="button submit">
-                      Send Message
+                      Send Message Through The Cloud
                     </a>
                   </li>
                 </ul>
