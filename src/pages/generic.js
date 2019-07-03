@@ -14,27 +14,18 @@ const SecondPage = () => (
     <div id="wrapper">
       <section id="main" className="wrapper">
         <div className="inner">
-          <h1 className="major">A Generic Page</h1>
+          <h1 className="major">Welcome To The Cloud</h1>
           <span className="image fit">
             <img src={pic4} alt="" />
           </span>
           <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit tristique.
+            You are now in the cloud. It's that easy! Now that you've converted all of your assets to cloud assets, 
+            you can sit back, relax, and breathe easy. Smell that? That's the satisfaction of being in the cloud. 
           </p>
           <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+            You and thousands of other cloud customers have been satisfactorily serviced by our licensed cloud specialists. 
+            Enjoy your stay even more up in the clouds with our signature CloudPamper™ level of service which doubles the 
+            amount of cloud you will be given. Ask your cloud sales associate today if you're interested. 
           </p>
         </div>
       </section>
